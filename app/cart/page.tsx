@@ -8,11 +8,12 @@ import { calculateSubtotal, calculateGrandTotal } from "@/lib/calculations";
 import CartInitializer from "@/app/cart/CartInitializer";
 
 async function getCartData() {
-  // Use VERCEL_URL in production, localhost in development
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
-  
+  // Use environment variable for production URL
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ||
+    "http://localhost:3000";
+
   const res = await fetch(`${baseUrl}/api/cart`, {
     cache: "no-store",
   });
