@@ -1,6 +1,7 @@
 # Eco Checkout Flow - MVP
 
 A minimal, functional checkout experience inspired by Ecoyaan's eco-commerce platform, built with Next.js 14, React, TypeScript, and Tailwind CSS.
+<img width="1527" height="748" alt="image" src="https://github.com/user-attachments/assets/9b92145c-c36e-43e4-b4b9-466b6d35ce45" />
 
 ## 🌱 Project Overview
 
